@@ -76,7 +76,7 @@ function ProductCard(props) {
                   <button
                     // onClick={handleAddItem },
                     onClick={() => handleAddItem(product)}
-                    className="px-3 py-2 bg-secondary text-white text-xs font-bold uppercase rounded"
+                    className="px-3 py-2 bg-secondary text-white text-xs font-bold uppercase rounded hover:bg-primary hover:text-black" 
                   >
                     Add to Card
                   </button>
