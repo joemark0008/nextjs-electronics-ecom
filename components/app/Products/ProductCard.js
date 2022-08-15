@@ -5,8 +5,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function ProductCard(props) {
-  const products = props.products.products.data;
-  //   console.log(products);
+  const products = props.products.products;
+    console.log(props);
 
   const { addItem } = useCart();
 
@@ -18,7 +18,7 @@ function ProductCard(props) {
 
   return (
     <>
-      <section className="flex justify-center flex-wrap gap-2 max-w-screen-sx px-2">
+      <section className="flex justify-center flex-wrap gap-2 max-w-screen-2xl px-2 mx-auto">
         {products.map((product) => (
           <div key={product.id} className="py-2">
             <div className="flex max-w-md bg-white shadow-lg rounded-lg overflow-hidden">
@@ -39,19 +39,19 @@ function ProductCard(props) {
                 </p>
                 <div className="flex item-center mt-2">
                   <svg
-                    className="w-5 h-5 fill-current text-gray-700"
+                    className="w-5 h-5 fill-current text-primary"
                     viewBox="0 0 24 24"
                   >
                     <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
                   </svg>
                   <svg
-                    className="w-5 h-5 fill-current text-gray-700"
+                  className="w-5 h-5 fill-current text-primary"
                     viewBox="0 0 24 24"
                   >
                     <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
                   </svg>
                   <svg
-                    className="w-5 h-5 fill-current text-gray-700"
+                    className="w-5 h-5 fill-current text-primary"
                     viewBox="0 0 24 24"
                   >
                     <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
@@ -70,13 +70,13 @@ function ProductCard(props) {
                   </svg>
                 </div>
                 <div className="flex item-center justify-between mt-3">
-                  <h1 className="text-secondary font-bold text-xl">
+                  <h1 className="text-tertiary font-bold text-xl">
                     ${product.price}
                   </h1>
                   <button
                     // onClick={handleAddItem },
                     onClick={() => handleAddItem(product)}
-                    className="px-3 py-2 bg-primary text-white text-xs font-bold uppercase rounded"
+                    className="px-3 py-2 bg-secondary text-white text-xs font-bold uppercase rounded"
                   >
                     Add to Card
                   </button>
