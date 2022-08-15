@@ -13,7 +13,7 @@ function ProductCard(props) {
   const handleAddItem = (e) => {
     // console.log(e);
     addItem(e);
-    toast("Item Added");
+    toast.success("Item successfully Added");
   };
 
   return (

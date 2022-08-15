@@ -3,6 +3,7 @@ import ProductTab from "../components/app/Products/ProductTab";
 import axios from "axios";
 import Drawer from "../components/app/Drawer";
 import { products } from "../data/Products";
+import NewsLetter from "../components/app/NewsLetter";
 
 export default function Home() {
   // console.log(data);
@@ -11,6 +12,8 @@ export default function Home() {
       <Drawer />
       <Hero />
       <ProductTab products={products} />
+      <NewsLetter/>
+  
     </>
   );
 }

@@ -3,7 +3,7 @@ import React from "react";
 function HeroCard() {
   return (
     <>
-      <div className="relative">
+      <div className="">
         <div className="p-6 max-w-sm bg-gradient-to-r from-yellow-100 via-yellow-300 to-yellow-500 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 relative">
           <div className="flex justify-start items-center ">
             <svg

@@ -2,15 +2,11 @@ import React, { useState, useEffect } from "react";
 import { useCart } from "react-use-cart";
 import Image from "next/image";
 
-
 function Cart() {
   const { emptyCart, totalUniqueItems, items, updateItemQuantity, removeItem } =
     useCart();
 
   const [showing, setShowing] = useState(false);
-
-
-
 
   useEffect(() => {
     setShowing(true);
@@ -95,7 +91,7 @@ function Cart() {
                 </tbody>
               </table>
               <hr className="pb-6 mt-6" />
-              <button onClick={emptyCart}>Clear</button>
+              <button className="bg-primary px-2 py-1 rounded-md" onClick={emptyCart}>Clear</button>
             </div>
           </div>
         </div>

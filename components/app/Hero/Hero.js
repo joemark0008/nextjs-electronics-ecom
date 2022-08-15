@@ -4,10 +4,21 @@ import HeroCard from "./HeroCard";
 function Hero() {
   return (
     <>
-      <section className="flex flex-wrap max-w-screen-xl gap-2 mx-auto ">
-        <div className="bg-white dark:bg-gray-900 w-full lg:w-2/3">
+      <section className="flex flex-wrap max-w-screen-xl gap-2 mx-auto relative rounded-md ">
+        <svg
+          className=" hidden lg:block absolute bottom-0 rounded-xl"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            fill="#002B5B"
+            fillOpacity="1"
+            d="M0,192L40,197.3C80,203,160,213,240,197.3C320,181,400,139,480,128C560,117,640,139,720,170.7C800,203,880,245,960,240C1040,235,1120,181,1200,154.7C1280,128,1360,128,1400,128L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+          ></path>
+        </svg>
+        <div className="bg-white dark:bg-gray-900 w-full lg:w-2/3 ">
           <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-            <div className="mr-auto  place-self-center lg:col-span-7">
+            <div className="mr-auto  place-self-center lg:col-span-7 relative">
               <h1 className=" items-center max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
                 Shop What You Desire
               </h1>
@@ -35,12 +46,12 @@ function Hero() {
               </a>
               <a
                 href="#"
-                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+                className=" bg-white inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
               >
                 Speak to Sales
               </a>
             </div>
-            <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+            <div className="hidden lg:mt-0 lg:col-span-5 lg:flex relative">
               <img
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
                 alt="mockup"
@@ -48,7 +59,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className=" flex flex-wrap lg:flex-col  gap-2 justify-center items-center mx-auto">
+        <div className=" flex flex-wrap lg:flex-col  gap-2 justify-center items-center mx-auto ">
           <HeroCard />
           <HeroCard />
         </div>
