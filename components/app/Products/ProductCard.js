@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 function ProductCard(props) {
   const products = props.products.products;
-    console.log(props);
+    // console.log(props);
 
   const { addItem } = useCart();
 

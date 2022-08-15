@@ -7,21 +7,31 @@ function Header() {
   return (
     <>
       <div className="sticky top-0 z-20">
-        <nav className="bg-secondary dark:bg-gray-700">
+        <nav className=" hidden md:block bg-secondary dark:bg-gray-700">
           <div className="py-3 px-4 mx-auto max-w-screen-xl md:px-6">
-            <div className="flex items-center">
-              <ul className="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium">
-                <li>
-                  <Link href="/">
-                    <a
-                      className="text-gray-900 dark:text-white hover:underline"
-                      aria-current="page"
-                    >
-                      Welcome to Worldwide Electronics Store
-                    </a>
-                  </Link>
-                </li>
-              </ul>
+            <div className="flex justify-between items-center">
+              <div className="flex justify-center text-center text-sm font-medium">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <p>Welcome to Electronics Store</p>
+              </div>
             </div>
           </div>
         </nav>

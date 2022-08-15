@@ -41,7 +41,7 @@ function Cart() {
                     <th className="text-right">Total price</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody >
                   {items.map((item) => (
                     <tr key={item.id}>
                       <td className="hidden pb-4 md:table-cell">
